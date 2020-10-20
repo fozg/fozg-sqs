@@ -1,10 +1,16 @@
 {
-  "name": "fozg-sqs",
-  "version": "1.0.0",
+  "name": "@fozg/fozg-sqs",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:send": "node dist/test/send",
+    "test:recive": "node dist/test/recive",
+    "build": "tsc",
+    "dev": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -19,5 +25,8 @@
   "dependencies": {
     "redis": "^3.0.2",
     "rsmq": "^0.12.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
   }
 }
