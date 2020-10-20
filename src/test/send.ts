@@ -1,4 +1,4 @@
-import SQS from '../SQS';
+import SQS from '../index';
 
 new SQS("fozg").sendMessage("hello world!").then(res => {
     console.log("id: ", res)

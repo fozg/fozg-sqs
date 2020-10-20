@@ -3,9 +3,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Fozg Simple Queue Service based on Redis",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test:send": "node dist/test/send",
     "test:recive": "node dist/test/recive",
@@ -16,8 +17,8 @@
     "type": "git",
     "url": "git+https://github.com/fozg/fozg-sqs.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Fozg",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fozg/fozg-sqs/issues"
   },

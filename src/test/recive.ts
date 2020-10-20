@@ -1,4 +1,4 @@
-import SQS from '../SQS';
+import SQS from '../index';
 
 const sqs = new SQS("fozg");
 
