@@ -18,7 +18,9 @@ export default class SQS {
         if ((await this.listQueue()).find(item => item === this.channel)) {
             return
         } else {
-            await this.rsmq.createQueueAsync({ qname: this.channel })
+            try {
+                await this.rsmq.createQueueAsync({ qname: this.channel })
+            } catch (e) { }
         }
     }
 

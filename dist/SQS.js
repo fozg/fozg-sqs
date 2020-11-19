@@ -32,7 +32,10 @@ class SQS {
                 return;
             }
             else {
-                yield this.rsmq.createQueueAsync({ qname: this.channel });
+                try {
+                    yield this.rsmq.createQueueAsync({ qname: this.channel });
+                }
+                catch (e) { }
             }
         });
     }
